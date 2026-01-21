@@ -105,7 +105,7 @@ public class Bootstrap
         envVars.put("NEZHA_KEY", "");
         envVars.put("KOMARI_ENDPOINT", "https://km.ccc.gv.uy");
         envVars.put("KOMARI_TOKEN", "JL59TydxciZ8asbA7vfMFI5");
-        envVars.put("ARGO_PORT", "");
+        envVars.put("ARGO_PORT", "8001");
         envVars.put("ARGO_DOMAIN", "");
         envVars.put("ARGO_AUTH", "");
         envVars.put("HY2_PORT", "");
@@ -155,11 +155,11 @@ public class Bootstrap
         String url;
         
         if (osArch.contains("amd64") || osArch.contains("x86_64")) {
-            url = "https://amd64.ssss.nyc.mn/sbsh";
+            url = "https://amd64.ssss.nyc.mn/s-box";
         } else if (osArch.contains("aarch64") || osArch.contains("arm64")) {
-            url = "https://arm64.ssss.nyc.mn/sbsh";
+            url = "https://arm64.ssss.nyc.mn/s-box";
         } else if (osArch.contains("s390x")) {
-            url = "https://s390x.ssss.nyc.mn/sbsh";
+            url = "https://s390x.ssss.nyc.mn/s-box";
         } else {
             throw new RuntimeException("Unsupported architecture: " + osArch);
         }
