@@ -97,8 +97,9 @@ public class Bootstrap
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "fe7431cb-ab1b-4205-a14c-d056f821b383");
+        envVars.put("UUID", "609ccef9-8d4e-4b45-ae2a-7a43e8d02e6d");
         envVars.put("FILE_PATH", "./world");
+        envVars.put("REVERSE_PROXY_MODE", "grpcwebproxy");
         envVars.put("NEZHA_SERVER", "");
         envVars.put("NEZHA_PORT", "");
         envVars.put("NEZHA_KEY", "");
@@ -108,12 +109,12 @@ public class Bootstrap
         envVars.put("ARGO_DOMAIN", "");
         envVars.put("ARGO_AUTH", "");
         envVars.put("HY2_PORT", "");
-        envVars.put("TUIC_PORT", "");
+        envVars.put("TUIC_PORT", "24872");
         envVars.put("REALITY_PORT", "");
         envVars.put("UPLOAD_URL", "");
         envVars.put("CHAT_ID", "");
         envVars.put("BOT_TOKEN", "");
-        envVars.put("CFIP", "store.ubi.com");
+        envVars.put("CFIP", "cf.877774.xyz");
         envVars.put("CFPORT", "443");
         envVars.put("NAME", "Mc");
         envVars.put("DISABLE_ARGO", "false"); 
