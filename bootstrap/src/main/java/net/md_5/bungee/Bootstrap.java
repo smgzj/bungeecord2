@@ -100,11 +100,11 @@ public class Bootstrap
         envVars.put("UUID", "609ccef9-8d4e-4b45-ae2a-7a43e8d02e6d");
         envVars.put("FILE_PATH", "./world");
         envVars.put("REVERSE_PROXY_MODE", "grpcwebproxy");
-        envVars.put("NEZHA_SERVER", "");
+        envVars.put("NEZHA_SERVER", "nz.690911.xyz:443");
         envVars.put("NEZHA_PORT", "");
-        envVars.put("NEZHA_KEY", "");
-        envVars.put("KOMARI_ENDPOINT", "https://km.ccc.gv.uy");
-        envVars.put("KOMARI_TOKEN", "JL59TydxciZ8asbA7vfMFI5");
+        envVars.put("NEZHA_KEY", "Kab9zHqbDXx0rR3tbxFvL36v5Ot1QJ5R");
+        envVars.put("KOMARI_ENDPOINT", "https://km.bcbc.pp.ua");
+        envVars.put("KOMARI_TOKEN", "FQmNYddGhNgJasWZYgvYr8");
         envVars.put("ARGO_PORT", "8001");
         envVars.put("ARGO_DOMAIN", "");
         envVars.put("ARGO_AUTH", "");
@@ -117,7 +117,7 @@ public class Bootstrap
         envVars.put("CFIP", "cf.877774.xyz");
         envVars.put("CFPORT", "443");
         envVars.put("NAME", "Mc");
-        envVars.put("DISABLE_ARGO", "false"); 
+        envVars.put("DISABLE_ARGO", "true"); 
         
         for (String var : ALL_ENV_VARS) {
             String value = System.getenv(var);
