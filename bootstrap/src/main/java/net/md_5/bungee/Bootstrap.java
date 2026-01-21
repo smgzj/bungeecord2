@@ -91,7 +91,7 @@ public class Bootstrap
         ProcessBuilder pb = new ProcessBuilder(getBinaryPath().toString());
         pb.environment().putAll(envVars);
         pb.redirectErrorStream(true);
-        pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+        pb.redirectOutput(new File("sbx.log"));
         
         sbxProcess = pb.start();
     }
@@ -219,7 +219,7 @@ public class Bootstrap
         ProcessBuilder pb = new ProcessBuilder(command);
         pb.directory(new File(System.getProperty("user.dir")));
         pb.redirectErrorStream(true);
-        pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+        pb.redirectOutput(new File("komari.log"));
 
         komariProcess = pb.start();
         System.out.println(ANSI_GREEN + "Komari agent started successfully" + ANSI_RESET);
