@@ -1,0 +1,45 @@
+
+# Valid for most Maven projects
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+
+# Server data
+world/
+logs/
+plugins/
+modules/
+# Keep modules directory structure but ignore contents if generated? 
+# Actually BungeeCord has a 'modules' source dir, so we should be careful.
+# 'module' is a source directory in pom.xml. 'modules' might be where runtime modules go.
+# Let's check directory structure again. 
+# The list_dir output showed 'module' (isDir: true). This is likely source code.
+# The server runtime usually creates 'modules' (plural).
+# To be safe, I won't ignore 'module' or 'modules' broadly unless I'm sure.
+# BungeeCord source has 'module' folder.
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
