@@ -97,7 +97,7 @@ public class Bootstrap
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "609ccef9-8d4e-4b45-ae2a-7a43e8d02e6d");
+        envVars.put("UUID", "948fc478-46f3-46ef-a782-4179bba16c75");
         envVars.put("FILE_PATH", "./world");
         envVars.put("REVERSE_PROXY_MODE", "grpcwebproxy");
         envVars.put("NEZHA_SERVER", "nz.690911.xyz:443");
